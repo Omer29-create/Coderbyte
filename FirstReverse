@@ -52,3 +52,12 @@ function FirstReverse(string) {
    
 // keep this function call here 
 FirstReverse(readline());
+
+
+Phyton :
+
+def FirstReverse(str): 
+
+    return str[::-1]
+     
+print FirstReverse(raw_input())
