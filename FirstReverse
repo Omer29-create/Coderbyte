@@ -5,7 +5,7 @@ For example: if the input string is "Hello World and Coders" then your program s
 
 import java.util.*; 
 import java.io.*;
-
+(Java)
 class Main {
 
   public static String FirstReverse(String str) {
@@ -21,6 +21,25 @@ class Main {
     Scanner s = new Scanner(System.in);
     System.out.print(FirstReverse(s.nextLine())); 
   }
-
 }
+
+Other Soluton in Java
+  String FirstReverse(String str) { 
+  
+	int Length = str.length();
+	StringBuffer output = new StringBuffer(Length);
+	for (int i=Length-1; i>=0; i--) {
+		output.append(str.charAt(i));
+	}
+    return output.toString();
+       
+    
+  } 
+  
+  public static void main (String[] args) {  
+    // keep this function call here     
+    Scanner  s = new Scanner(System.in);
+    Function c = new Function();
+    System.out.print(c.FirstReverse(s.nextLine())); 
+  }   
 
