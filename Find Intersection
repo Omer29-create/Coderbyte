@@ -42,3 +42,35 @@ function FindIntersection(strArr) {
 
 }
 console.log(FindIntersection(readline()));
+
+
+---------------------  PYTHON  -------------------------
+def FindIntersection(strArr):
+  val=[]
+  a=list(set(strArr[0].split(",")))
+  b=list(set(strArr[1].split(",")))
+  for i in range(len(a)):
+    a[i]=int(a[i])
+  for j in range(len(b)):
+    b[j]=int(b[j])
+
+  for i in range(len(a)):
+    for j in range(len(b)):
+      if(a[i]==b[j]):
+        val.append(a[i])
+  val=list(set(val))
+  val.sort()
+  if len(val) == 0:
+      return False 
+  else:
+      return ",".join([str(i) for i in val])
+
+  
+
+
+    
+  # code goes here
+  
+
+# keep this function call here 
+print(FindIntersection(input()))
